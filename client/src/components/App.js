@@ -5,8 +5,9 @@ import * as actions from '../actions';
 import Header from './Header';
 import Landing from './Landing';
 // const Landing=()=><h2>Landing Page</h2>
-const NewsFeed=()=><h2>NewsFeed</h2>
-
+const DashBoard=()=><h2>Dashboard</h2>
+const surveys=()=><h1>Surveys</h1>
+const surveysNew=()=><h2>Surveys to create new </h2>
 
 class App extends Component{
   //lifecycle method
@@ -21,9 +22,11 @@ class App extends Component{
             <BrowserRouter>
                <div>
                   <Header />
-                  <Route exact={true} path="/" component={Landing} />
+                  <Route exact path="/" component={Landing} />
+                  <Route exact path="/surveys" component={surveys} />
+                  <Route path="/surveys/new" component={surveysNew} />
 
-                  <Route path="/news" component={NewsFeed}/>
+
 
                </div>
             </BrowserRouter>

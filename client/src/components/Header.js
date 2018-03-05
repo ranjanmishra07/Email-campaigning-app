@@ -8,13 +8,12 @@ class Header extends  Component{
       case null:
           return
       case false:
-          return (
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li><a href="/auth/google">Login with Google</a></li>
-            <li><a href="/auth/github">Login with Github</a></li>
+          return(
 
-            </ul>
+            <li><a href="/auth/google">Login with Google</a></li>
           )
+
+
       default:
            return (
                 <ul id="nav-mobile1" className="right hide-on-med-and-down">
@@ -31,9 +30,9 @@ class Header extends  Component{
       <div>
        <nav>
          <div className="nav-wrapper">
-            <Link to={this.props.auth ? 'news' : '/'}
+            <Link to={this.props.auth ? '/surveys' : '/'}
             className="brand-logo">
-            NERDTALK
+            EMAILY
             </Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
 
