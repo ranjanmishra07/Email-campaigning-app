@@ -7,5 +7,7 @@ module.exports = {
   cookieKey: process.env.COOKIE_KEY,
   stripePublishableKey: 'pk_test_hy5DqgGQ8npUFSWpf8AkhauH',
   stripeSecretKey: 'sk_test_d8GF6ZINy3ZTcnnj7JwwOleZ',
+  sendGridKey:'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',
+  redirectDomain:'https://limitless-harbor-55952.herokuapp.com'
 
 };
