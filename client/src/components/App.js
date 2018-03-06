@@ -5,10 +5,8 @@ import * as actions from '../actions';
 import Header from './Header';
 import Landing from './Landing';
 import Dashboard from './Dashboard';
-// const Landing=()=><h2>Landing Page</h2>
-// const DashBoard=()=><h2>Dashboard</h2>
+import SurveyNew from './surveys/SurveyNew' ;
 
-const surveysNew=()=><h2>Surveys to create new </h2>
 
 class App extends Component{
   //lifecycle method
@@ -25,7 +23,7 @@ class App extends Component{
                   <Header />
                   <Route exact path="/" component={Landing} />
                   <Route exact path="/surveys" component={Dashboard} />
-                  <Route path="/surveys/new" component={surveysNew} />
+                  <Route path="/surveys/new" component={SurveyNew} />
 
 
 
