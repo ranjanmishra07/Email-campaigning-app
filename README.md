@@ -4,7 +4,7 @@ cant send surveys if you have less than 1 credit
 each payment gives you 5 credits ,so 5 credits for 5 surveys
 the app is still under progress , so  heroku website doesn't have all the functionality
 
-#tech stack
+# tech stack
  node js
  react and redux
  mongodb
